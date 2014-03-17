@@ -1,0 +1,239 @@
+body { 
+	font-family: helvetica; 
+	line-height: normal;
+	text-align: left;
+}
+.linkColor {
+	color: white;
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 100%; 
+	overflow: hidden;
+}
+.mainDisplay{
+	
+	margin: 105px auto;
+	width: 445px;
+}
+/*
+*== Misc. Styles
+*/
+.lrgFont{
+	font-size: 45px;
+}
+.medFont{
+	font-size: 30px;
+}
+.smFont{
+	font-size: 16px;
+}
+.bold {
+	font-weight: bold;
+}
+.light{
+	font-weight: lighter;
+}
+.bold{
+	font-weight: bold;
+}
+.paddingB{
+	padding-bottom: 45px
+}
+.fixed{
+	position: fixed;
+	clear: both;
+}
+/*
+*==SideNav styles
+*/
+#sideNav{
+	height: 100%;
+	width: 105px;
+	position: fixed;
+	left: 0px;
+	background: #A8A8A8;
+	margin-top: 65px;
+	z-index: 1000;
+
+}
+#sideNav img {
+	top: 5px;
+	left: 5px;
+}
+#sideNav ul {
+	margin-top: 150px;
+	
+	}
+#sideNav ul li {
+	width: 100%;
+	height: 75px;
+	background-color: #878686;
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+#sideNav ul li a {
+	position: relative;
+	top: 25px;
+	font-size: 23px }
+#sideNav p {
+	position: absolute;
+	bottom: 0px;
+	left: 0px; }
+#content {
+	font-weight: bold;
+}
+.piece{
+	position: relative;
+	top: 0px;
+	left: -270px;
+	display: none;
+	opacity: 1;
+
+}
+.piece:hover {
+	cursor: pointer;
+}
+#sideNav .pieceStyle  {
+	height: 32.5px;
+	background: #A8A8A8;
+	color: white;
+	padding-top: 12.5px;
+	width: 285px;
+}
+#rNavBtn{
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/rMenuBtn.jpg");
+	position: fixed;
+	
+	left: -55px;
+}
+
+
+
+/*
+*==Drop Down Styles
+*/
+#overFlow {
+	overflow: hidden;
+	width: 35px;
+	height: 75px;
+}
+#dropBox {
+	z-index: 4;
+	width: 75px;
+	height: 95px;
+	background-color: #ccc;
+	position: relative;
+	bottom: 79px;
+	left: 400px;
+}
+#triUp{
+	width: 0px;
+	height: 0px;
+	left: 5px;
+	top: 25px;
+	position: absolute;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 25px solid #b3b3b3;
+	
+
+}
+.moveRight{
+	position: relative;
+	right: 300px;
+}
+/*
+*==About Page
+*/
+
+#bio p {
+	margin-top: 25px;
+}
+#bio h1 {
+	position: relative;
+	bottom: 10px;
+	right: 24px;
+	background: black;
+	color: white;
+	padding: 15px;
+	width: 475px;
+}
+#social { 
+	float: left; 
+	width: 100%; 
+	margin-top: 105px;}
+#twitter { 
+	height: 115px; 
+	width: 115px; 
+	float: left; 
+	background: #2de0d7; 
+	overflow: hidden; 
+	padding: 5px;}
+#twitter span { 
+	color: white; 
+	height: 50px; 
+	display: block; 
+	width: auto; 
+	margin-top: 115px;}
+#linkedin { height: 115px; 
+	width: 115px; 
+	float: left; 
+	margin-left: 15px; 
+	background: #2483d1; 
+	overflow: hidden; 
+	padding: 5px; }
+#linkedin span { 
+	color: white; 
+	height: 50px; 
+	display: block; 
+	width: auto; 
+	margin-top: 115px;}
+#linkedin , #twitter, #email p { color: white;}
+
+#email { height: 115px; width: 115px; float: left; margin-left: 15px; background: #F30; overflow: hidden; padding: 5px;}
+#email span { color: white; height: 50px; display: block; width: auto; margin-top: 115px;}
+/*~~Commonly used classes/tags */
+#portfolioPieces h1 {
+	font-size: 45px;
+	font-weight: bold;
+	background: black;
+	color: white;
+	padding:20px;
+	
+}
+#pieceDescription {
+	font-size: 16px;
+	color: black;
+	font-weight: lighter;
+	background-color: #ccc;
+	margin: 20px 0px 0px 20px;
+	padding: 20px;
+	width: 70%;
+	height: 100%;
+}
+#pieceDescription p {
+	clear: both;	
+	width: 100%;
+}
+
+
+#imagePieceInput img {
+	 width: 375px;
+	 height: auto;
+	 border: 3px solid red;
+	 margin: 20px 0px 0px 20px;
+
+}
+#portfolioPieces{
+	display: none;
+	
+}
+
+
+
+

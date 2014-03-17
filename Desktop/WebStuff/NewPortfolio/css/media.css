@@ -1,0 +1,30 @@
+@media screen and(max-width: 1024px){
+
+	.mainDisplay{
+		border: 3px solid red;
+		width:;
+	}
+}
+@media screen and (max-width: 768px){
+	.mainDisplay{
+		border: 3px solid blue;
+		margin: 105px auto;
+	}
+
+}
+@media screen and (max-width: 480px){
+	.mainDisplay{
+		border: 3px solid green;
+		width: 100%;
+	}
+
+}
+@media screen and(max-width: 320px){
+	.mainDisplay{
+		border: 3px solid #ccc;
+		width: 100%;
+	}
+	.social a {
+		display: block;
+	}
+}
