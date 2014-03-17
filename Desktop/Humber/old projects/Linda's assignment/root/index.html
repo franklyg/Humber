@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Best James Bond Ever</title>
+ <style>
+ 	@import url('css/reset.css');
+	@import url('css/style.css');
+	@import url('css/media.css');
+</style>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src= "js/action.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script src "js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script>
+	$(document).ready(function() {
+   $('a[href*=#top]').bind('click', function(e) {
+	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+
+	var target = $(this).attr("href"); //Get the target
+
+	// perform animated scrolling by getting top-position of target-element and set it as scroll target
+	$('html, body').stop().animate({ scrollTop: $(target).offset().top }, 1700, function() {
+	     location.hash = target;  //attach the hash (#jumptarget) to the pageurl
+	});
+
+	return false;
+   });
+});
+</script>
+
+</head>
+
+<body>
+<div id = "wrapper">
+	<img src="images/James.png" alt="" id = "bond"/>
+    <img src="images/text.png" alt="" id = "text" />
+  
+    <a href= "#top" class = "down"><img src="images/down.png" alt= "" id ="down"/></a>
+   	
+    
+    <div id = "top" ></div>
+    <div id = "slide"></div>
+   
+    <div id = "nav">
+        <div class = "james" id = "One"><a href = "#slide" id = "One"><img src="images/index.png"/></a><p>SEAN CONNERY</p></div>
+        <div class = "james" id = "Two"><a href = "#slide"id = "Two"><img src="images/index.png"/></a><p>GEORGE LAZENBY</p></div>
+        <div class = "james" id = "Three"><a href = "#slide" id = "Three"><img src="images/index.png"/></a><p>TIMOTHY DALTON</p></div>
+        <div class = "james" id = "Four"><a href = "#slide" id = "Four"><img src="images/index.png"/></a><p>ROGER MOORE</p></div>
+        <div class = "james" id = "Five"><a href = "#slide" id = "Five"><img src="images/index.png"/></a><p>PIERCE BRONSAN</p></div>
+        <div class = "james" id = "Six"><a href = "#slide" id = "Six"><img src="images/index.png"/></a><p>DANIEL CRAIG</p></div>
+   </div>
+   <!-- nav close --> 
+   
+  
+   <!-- sean close -->
+    
+ <div id = "blackBox"><!--<a href = "#top" id = "back" style="font-size: 24px">Return>>></a>--><a href = "#top" id = "thebonds">
+ 
+ <img src="images/bondRelease.png" alt = "" id = "theBonds" />
+ <h1 style="font-size: 25px; position: relative; right: 570px; bottom: 80px; ">OVERALL:</h1>
+ <img src="images/Soverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Soverall" />
+ <img src="images/Goverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Goverall" />
+ <img src="images/Toverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Toverall" />
+ <img src="images/Roverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Roverall" />
+ <img src="images/Poverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Poverall" />
+ <img src="images/Doverall.png" style="position: relative; right: 355px; bottom:105px;" id = "Doverall" />
+ </a></div>       
+	 
+     
+     <div id = "sean">
+  		
+        <div>
+        	
+            <a href ="#sean" id ="killS"  style="font-size: 20px;">KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downSK" /><img src="images/upBtn.png" id = "upSK" style="margin-top: 10px; margin-left: 10px;"  /></a>
+            
+            <section id = "SeanKill">
+            
+            <section id = "seanKill"></section>
+            <p style="font-size: 25px; position: relative; ">Total Kills = 72</p>
+            
+            </section>
+            
+        </div>
+        <!-- KILLS -->
+        
+        <div>
+        <a href ="#Sgad"  style="font-size: 20px;" id = "Sgad">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downSG" /><img src="images/upBtn.png" id = "upSG" style="margin-top: 10px; margin-left: 10px;"  /></a>
+       
+        	<section id = "Sgadget"style=" position: relative; top: 0px;">	
+            <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+        		
+                <section class = "db5"></section>
+        	
+            <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+            	<section id = "SG"></section>
+            </section>    
+        
+        </div>
+        <!-- GADGETS -->
+        <div >
+        
+        <a href ="#SR" id = "SR"  style="font-size: 20px;">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downSR" /><img src="images/upBtn.png" id = "upSR" style="margin-top: 10px; margin-left: 10px;" /></a>
+        
+        <section id = "rate">	
+            <section id = "dr"><p style="font-size: 15px; margin-top: 10px">Dr.No</p><section id = "drNo" class= "r"><span id = "S1">98%</span></section></section>
+            <section id = "rus"><p style="font-size: 15px; margin-top: 10px">From Russia With Love</p><section id = "russia" class= "r"><span id = "S2">96%</span></section></section>
+            <section id = "gold"><p style="font-size: 15px; margin-top: 10px">Goldfinger</p><section id = "goldf" class= "r"><span id = "S3">96%</span></section></section>
+            <section id = "thunder"><p style="font-size: 15px; margin-top: 10px">Thunderball</p><section id = "ball" class= "r"><span id = "S4">85%</span></section></section>
+            <section id = "live"><p style="font-size: 15px; margin-top: 10px">You Only Live Twice</p><section id = "liveT" class= "r"><span id = "S5">70%</span></section></section>
+            <section id = "dia"><p style="font-size: 15px; margin-top: 10px">Diamonds Are Forever</p><section id = "diamon" class= "r"><span id = "S6">64%</span></section></section>
+            
+            <section><img src="images/Srate.png" alt= "" id = "Srate"/></section>
+        </section>    
+        </div>
+        
+        <div>
+        
+        <a href ="#SVillian"  style="font-size: 20px;" id = "SVillian" >VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downSV" /><img src="images/upBtn.png" id = "upSV" style="margin-top: 10px; margin-left: 10px;"  /> </a>
+        	<section></section>
+        	<section id = "VS">
+            <section id = "villianS"></section>
+            <section id = "Svillian">
+            	<section><p style="font-size: 15px; margin-top: 10px">Dr.No:</p><p>Boiled to death</p></section>
+                <section><p style="font-size: 15px; margin-top: 10px">Rosa Klebb:</p><p>Shot in the chest</p></section>
+                <section><p style="font-size: 15px; margin-top: 10px">Auric Goldfinger:</p><p>Sucked out of a plane window</p></section>
+                <section><p style="font-size: 15px; margin-top: 10px">Emilio Largo:</p><p>Shot in the back</p></section>
+            </section>
+          
+            <p style="font-size: 25px; position: relative; bottom: 195px;">Total Deaths = 4</p>
+              </section>
+            
+        </div>
+        
+        <div>
+        <<a href ="#girlS"  style="font-size: 20px;" id = "girlS" >BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downSGR" /><img src="images/upBtn.png" id = "upSGR" style="margin-top: 10px; margin-left: 10px;" /></a>
+        <section></section>
+        	<section id ="Sgirl"></section>
+        </div>
+    </div>
+    
+    <!------------------------ SEAN SONNERY Closes ----------------------------------->
+    
+    
+    <div id = "geo">
+  		
+        <div>
+        <a href ="#killG" id = "killG"  style="font-size: 20px;" >KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downGK" /><img src="images/upBtn.png" id = "upGK" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        <section id = "SeankillG">
+        <section id = "seanKillG"></section>
+         <p style="font-size: 25px;  position: relative;">Total Kills = 5</p>
+          </section>
+        </div>
+       
+        
+        <div>
+        	<a href ="#Ggad"  style="font-size: 20px;" id = "Ggad">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downGG" /><img src="images/upBtn.png" id = "upGG" style="margin-top: 10px; margin-left: 10px;"  /></a> 
+			<section id = "GGad">                
+                <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+                    <section class = "dbs"></section>
+                <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+                    <section>
+                        <section id = "GG"></</section>
+                    </section>
+                
+            </section>    
+        </div>
+        
+        <div>
+        	<a href ="#ga"  style="font-size: 20px;" id = "ga">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downGR" /><img src="images/upBtn.png" id = "upGR" style="margin-top: 10px; margin-left: 10px;" /></a>
+        	<section id = "rateG">
+            	<section id = "OHMSS"><p style="font-size: 15px; margin-top: 10px">On Her Majesty's Secret Service</p><section id = "on" class= "r"><span id ="G1">81%</span></section></section>
+            	
+            <section><img src="images/Grate.png" alt= "" id = "Grate"/></section>
+            
+            </section>
+        </div>
+        
+        <div>
+        	<a href ="#gvillian"  style="font-size: 20px;" id = "gvillian">VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downGV" /><img src="images/upBtn.png" id = "upGV" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        		<section></section>
+			<section id = "GV">	        	
+                <section id = "VG"></section>
+                <section id = "Gvillian"><p style="font-size: 15px; margin-top: 10px">None.</p></section>
+              
+        	<p style="font-size: 25px; position: relative; bottom: 15px;">Total Deaths = 0</p>
+            </section>  
+        </div>
+        
+        <div>
+        <a href ="#ggirl"  style="font-size: 20px;" id = "ggirl">BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downGGR" /><img src="images/upBtn.png" id = "upGGR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        		<section></section>
+        		<section id = "Ggirl"></section>
+        </div>
+        
+   </div>
+   <!------------------ GEORGE CLOSES------------------------------------->
+   
+   
+   <div id = "tim">
+  		<div>
+        	<a href ="#tim" id = "killT"  style="font-size: 20px;">KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downTK" /><img src="images/upBtn.png" id = "upTK" style="margin-top: 10px; margin-left: 10px;" /></a>
+            <section id = "SeankillT">
+            <section id = "seanKillT"></section>
+             <p style="font-size: 25px;  position: relative; ">Total Kills = 23</p>
+             
+             </section>
+        </div>
+        
+        <div>
+        <a href ="#tgad"  style="font-size: 20px;" id = "tgad">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downTG" /><img src="images/upBtn.png" id = "upTG" style="margin-top: 10px; margin-left: 10px;" /></a>
+        	<section id = "Tgad">
+            <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+        		<section id = "carSix"></section>
+                
+        	<h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+            	
+                	<section id = "TG"></</section>
+                </section>
+        	
+        </div>
+        <div>
+        	<a href ="#TR"  style="font-size: 20px;" id = "TR">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downTR" /><img src="images/upBtn.png" id = "upTR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section id = "rateT">
+            	
+                <section id = "TLD"><p style="font-size: 15px; margin-top: 10px">The Living Daylights</p><section id = "tld" class= "r"><span id = "T1">75%</span></section></section>
+        		<section id = "LTK"><p style="font-size: 15px; margin-top: 10px">Licence to Kill</p><section id = "ltk" class= "r"><span id = "T2">74%</span></section></section>
+                 
+           
+        	<section><img src="images/Trate.png" alt= "" id = "Trate"/></section>
+            
+            </section>
+        </div>
+        
+        <div>
+        <a href ="#VT"  style="font-size: 20px;" id = "VT">VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downTV" /><img src="images/upBtn.png" id = "upTV" style="margin-top: 10px; margin-left: 10px;"  /></a>
+  			<section></section>
+            <section id = "TV">
+        	<section id = "Tvil"></section>
+                <section id = "Tvillian">              
+                    <section><p style="font-size: 15px; margin-top: 10px">General Georgi Koskov:</p><p>Executed.</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Brad Whitaker:</p><p>Bomb explosion.</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Franz Sanchez:</p><p>Set on fire with gasoline</p></section>
+                </section>  
+                <p style="font-size: 25px; position: relative; bottom: 145px;">Total Deaths = 3</p>  
+            </section>
+            
+        </div>
+        
+        <div>
+        	<a href ="#GT" id = "GT"  style="font-size: 20px;">BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downTGR" /><img src="images/upBtn.png" id = "upTGR" style="margin-top: 10px; margin-left: 10px;" /></a>
+        <section></section>
+        	<section id = "Tg"></section>
+        </div>
+        
+   </div>
+   <!--------------------------------------- TIM CLOSES ------------------------------>
+    <div id = "rog">
+  		
+        <div>
+        <a href ="#rog" id ="killR"  style="font-size: 20px;">KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downRK" /><img src="images/upBtn.png" id = "upRK" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        <section id = "SeanKillR">
+       <section id = "seanKillR"></section>
+         <p style="font-size: 25px;  position: relative; ">Total Kills = 96</p>
+         </section>
+         </div>
+        
+        <div>
+        <a href ="#rgad"  style="font-size: 20px;" id = "rgad">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downRG" /><img src="images/upBtn.png" id = "upRG" style="margin-top: 10px; margin-left: 10px;" /></a>
+        	<section id = "Rgad">
+            <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+        		<section id = "carFive"></section>
+               
+        	<h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+            	
+                	<section id = "rgun"></</section>
+                
+        	</section>
+        </div>
+        
+        
+        <div>
+        <a href ="#RA"  style="font-size: 20px;" id = "RA">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downRR" /><img src="images/upBtn.png" id = "upRR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section id = "ra" >
+            	<section id = "LLD"><p style="font-size: 15px; margin-top: 10px">Live and Let Die</p><section id = "lld" class= "r"><span id = "R1">65%</span></section></section>
+                <section id = "TMWTGG"><p style="font-size: 15px; margin-top: 10px">The Man With the Golden Gun</p><section id = "tmwtgg" class= "r"><span id = "R2">46%</span></section></section>
+                <section id = "TSWLM"><p style="font-size: 15px; margin-top: 10px">The Spy Who Loved Me</p><section id = "tswlm" class= "r"><span id = "R3">78%</span></section></section>
+                <section id = "M"><p style="font-size: 15px; margin-top: 10px">Moonraker</p><section id = "m" class= "r"><span id = "R4">62%</span ></section></section>
+                <section id = "FYEO"><p style="font-size: 15px; margin-top: 10px">For Your Eyes Only</p><section id = "fyeo" class= "r"><span id = "R5">73%</span></section></section>
+                <section id = "Oct"><p style="font-size: 15px; margin-top: 10px">Octopussy</p><section id = "oct" class= "r"><span id = "R6">43%</span></section ></section>
+                <section id = "AVTK"><p style="font-size: 15px; margin-top: 10px">A View to Kill</p><section id = "avtk" class= "r"><span id = "R7">36%</span></section></section>
+                
+        	<section><img src="images/Rrate.png" alt= "" id = "Rrate"/></section>
+        </section> 
+        </div>
+      
+        
+        <div>
+        	<a href ="#RV"  style="font-size: 20px;" id = "RV">VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downRV" /><img src="images/upBtn.png" id = "upRV" style="margin-top: 10px; margin-left: 10px;"  /></a>
+                <section></section>
+                <section id = "rv">
+                <section id = "Rvil"></section>	
+                    <section id = "Rvillian">
+                        <section><p style="font-size: 15px; margin-top: 10px">Dr. Kananga / Mr. Big:</p><p>Inflates and explodes from compressed gas capsule</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Francisco Scaramanga:</p><p>Shot in the heart</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Karl Stromberg:</p><p>Shot 4 times.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Sir Hugo Drax:</p><p>Shot by poison dart sent to outer space.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Aris Kristatos:</p><p>Stabbed in the back.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Ernst Stavro Blofeld:</p><p>Gets dropped down chimney.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Kamal Khan:</p><p>Dies in plane crash.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">General Orlov:</p><p>Shot in the back.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Max Zorin:</p><p>Plummets off bridge.</p></section>
+            	</section>
+                	<p style="font-size: 25px; position: relative; bottom: 225px;">Total Deaths = 9</p>
+                </section>
+                
+                
+            </div>
+        
+        <div>
+        	<a href ="#Rgirl"  style="font-size: 20px;" id = "Rgirl">BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downRGR" /><img src="images/upBtn.png" id = "upRGR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        		<section></section>
+        			<section id = "rgirl"></section>
+       </div>
+        
+   </div>
+   <!----------------------------------ROGER CLOSES ------------------------------------>
+   
+    <div id = "pie">
+  		<div>
+        	
+            <a href ="#killP" id = "killP"  style="font-size: 20px;">KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downPK" /><img src="images/upBtn.png" id = "upPK" style="margin-top: 10px; margin-left: 10px;"  /></a>
+            <section id = "SeanKillP">
+            <section id = "seanKillP"></section>
+             <p style="font-size: 25px; position: relative; ">Total Kills = 135</p>
+             </section>
+       	</div>
+        
+        <div>
+        <a href ="#pgad"  style="font-size: 20px;" id = "pgad">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downPG" /><img src="images/upBtn.png" id = "upPG" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        <section id = "PG">	
+            <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+        		<section  id = "carEight"></section>
+                <section  id = "carTwo"></section>
+                <section  id = "carFour"></section>
+                <section  id = "carThree"></section>
+                <section  class= "db5"></section>
+        	<h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+            
+                <section id = "pguns"></</section>
+             </section>   
+        	
+        </div>
+        
+        <div>
+        <a href ="#AP"  style="font-size: 20px;" id = "AP">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downPR" /><img src="images/upBtn.png" id = "upPR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section id = "prate">
+            	<section id ="G"><p style="font-size: 15px; margin-top: 10px">Goldeneye</p><section id = "g" class= "r"><span id = "P1">82%</span ></section></section>
+                <section id = "TND"><p style="font-size: 15px; margin-top: 10px">Tomorrow Never Dies</p><section id = "tnd" class= "r"><span id = "P2">57%</span></section></section>
+                <section id = "TWINE"><p style="font-size: 15px; margin-top: 10px">The World is Not Enough</p><section id = "twine" class= "r"><span id = "P3">51%</span></section></section>
+                <section id = "DAD"><p style="font-size: 15px; margin-top: 10px">Die Another Day</p><section id = "dad" class= "r"><span id = "P4">57%</span></section></section>
+            
+        	<section><img src="images/Prate.png" alt= "" id = "Prate"/></section>
+            </section>
+        </div><!--rating-->
+        
+        <div><a href ="#PV"  style="font-size: 20px;" id = "PV">VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downPV" /><img src="images/upBtn.png" id = "upPV" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section></section>
+        	<section id = "pv">
+            <section id = "Pvil"></section>
+                <section id = "Pvillian">              
+                    <section><p style="font-size: 15px; margin-top: 10px">Alec Trevelyan/Janus Organization :</p><p>Dropped from radar dish.</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Elliot Carver:</p><p>Shredded.</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Franz Sanchez:</p><p>Set on fire with gasoline</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Elektra King:</p><p>Shot.</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Renard:</p><p>Impaled</p></section>
+                    <section><p style="font-size: 15px; margin-top: 10px">Gustav Graves & Colonel Moon:</p><p>Sucked in by plane engine and shredded with parachute.</p></section></section>
+                    <p style="font-size: 25px; position: relative; bottom: 225px;">Total Deaths = 6</p>
+                </section>
+                
+        </div><!-- villian Death-->
+        <div><a href ="#pgirl"  style="font-size: 20px;" id = "pgirl">BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downPGR" /><img src="images/upBtn.png" id = "upPGR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        <section></section>
+        	<section id = "Pgirl"></section>
+            
+                
+                
+            </section> 
+        </div>
+        
+   </div>
+   <!------------------------------- PIERSON CLOSES ----------------------------------------->
+    <div id = "dan">
+  		<div>
+        
+        <a href ="#dan" id = "killD"  style="font-size: 20px;">KILL COUNT<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downDK" /><img src="images/upBtn.png" id = "upDK" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        <section  id = "SeankillD">
+        <section id = "seanKillD"></section>
+         <p style="font-size: 25px;  position: relative;">Total Kills = 27</p>
+         </section>
+        </div>
+        
+        <div>
+        <a href ="#Dgad" id = "Dgad" style="font-size: 20px;">GADGETS<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downDG" /><img src="images/upBtn.png" id = "upDG" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section id = "dgad">
+                <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Vehichles</h1>
+                    
+                        <section id = "carSeven"></section>
+                        <section class= "db5"></section>
+                       
+                   
+                <h1 style="color: #FFF;font-size: 20px; margin-top: 10px">Guns</h1>
+                    <section id = "dgun"></</section>
+                </section>
+            </div>
+        
+        <div>
+       	
+        <a href ="#DR"  id = "DR" style="font-size: 20px;">ACTOR RATING<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downDR" /><img src="images/upBtn.png" id = "upDR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section id = "rateD">
+           		<section id = "CR"><p style="font-size: 15px; margin-top: 10px" >Casino Royale</p><section id = "cr" class= "r"><span id = "D1">95%</span></section></section>
+                <section id = "QOS"><p style="font-size: 15px; margin-top: 10px">Quantum of Solace</p><section id = "qos" class= "r"><span id = "D2">64%</span></section></section>
+           
+        	<section><img src="images/Drate.png" alt= "" id = "Drate"/></section>
+            </section>
+        </div>
+        
+        <div>
+        	<a href ="#DV"  style="font-size: 20px;" id = "DV">VILLIAN DEATH<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downDV" /><img src="images/upBtn.png" id = "upDV" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        		<section></section>
+               
+                <section id = "dv">
+        		<section id = "Dvil"></section>
+            		<section id = "Dvillian">              
+                        <section><p style="font-size: 15px; margin-top: 10px">Le Chiffre:</p><p>Shot in the head.</p></section>
+                        <section><p style="font-size: 15px; margin-top: 10px">Dominic Greene:</p><p>Shot in the back of the head.</p></section>
+            	</section>
+                
+                <p style="font-size: 25px; position: relative; bottom: 80px;">Total Deaths = 2</p>
+                
+            	</section>
+                
+        </div>
+        
+        <div>
+        	<a href ="#dg"  style="font-size: 20px;" id = "dg">BOND GIRL<img src="images/downBtn.png" alt = "" style="margin-top: 10px; margin-left: 10px;" id = "downDGR" /><img src="images/upBtn.png" id = "upDGR" style="margin-top: 10px; margin-left: 10px;"  /></a>
+        	<section></section>
+        		<section id = "dgirl"></section>
+           
+            
+        </div>
+        
+   </div>
+   <!------------------------------ DAN CLOSES ------------------------------------>
+
+
+</div>
+<div>
+<a href = "#top" id = "backTop"><img src="images/backtotop.png" alt = "" id = "backtop"/></a>
+</div>
+</body>
+</html>

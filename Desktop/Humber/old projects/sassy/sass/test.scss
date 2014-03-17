@@ -1,0 +1,18 @@
+/*
+@import "compass/css3"
+
+#myDiv {
+	@include background-image(linear-gradient(white, red));
+}
+*/
+@import "framework"
+
+#myButton{
+	@include round-button(red);/*passes color from var $color*/
+}
+
+#myDiv{
+		@include lightbox;
+
+
+}

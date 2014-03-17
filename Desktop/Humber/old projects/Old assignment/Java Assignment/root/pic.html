@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta  charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manic to Panic - Pictures</title>	
+
+<style>
+	@import url("css/reset.css");
+	@import url("css/style.css");
+</style>
+
+<script>
+var image1 = new Image();
+	image1.src = "slide/pic.jpg"
+	var image2 = new Image();
+	image2.src = "slide/pic2.jpg"
+	var image3 = new Image();
+	image3.src = "slide/pic3.jpg"
+	var image4 = new Image();
+	image4.src = "slide/pic4.jpg"
+	
+</script>
+
+</head>
+
+
+
+
+<body>
+<nav id = "main">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="pic.html">Pictures</a></li>
+			<li><a href="merch.html">Merch</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>	
+		<form>
+			<label>Search:</label>
+			<input type="text" name="search" id="search" />
+			<input type="submit" value="submit" onclick = "return false;">
+		</form>
+	<div id = "black"></div>	
+</nav> <!--closes Nav-->
+
+<div id = "wrapper" >
+	
+	<div id="pics">
+		<h1>PICTURES!!!</h1>
+		<img name="big" src="slide/pic.jpg" id="big" width=500 height=375 border=0 alt="" />
+		
+
+	</div><!--Slide show place-->
+<script>
+		var step = 1
+		
+		function slideit(){
+			
+			if(!document.images)
+				return
+				document.big.src = eval("image" + step +".src");
+			if(step<4)//number of pics being counted
+				step++
+			else step = 1
+				setTimeout("slideit()", 2500) //duration
+			
+			}
+			slideit()
+</script>
+	
+
+
+	</div><!-- Closes wrapper -->
+	
+<!--Foot of page-->
+	<div id = "white"></div>
+	<footer>Francesco Gisonni Copyright 2012&copy;</footer>
+</body>
+</html>

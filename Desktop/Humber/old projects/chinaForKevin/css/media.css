@@ -1,0 +1,102 @@
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	body {width: auto;}
+	#header img { width: 100%; }
+	
+	#wrapper { width: 100%;}
+	#inner_content {width: 100%; margin: 0 auto; border: 3px blue solid; }
+	.teams { width:100%;  margin-top: 50px;  border: 3px solid red; padding-left: 0%; }
+	.team_info { padding: 0%; float: right; display: inline-block; margin-left: 2.5%; margin-right: 2.5%; margin-bottom: 5%;border: solid 3px red;  }
+	
+	
+	
+	.nav ul { width: 100%;}
+	.inner_nav { width: 80%;}
+	.nav {width: 100%; border: 3px solid red;}
+	
+	.objective_parent:after{ clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;}
+	.objective_parent img{ border: 3px solid blue;}
+	
+	.objective_parent {width: 100%; border: 3px solid black; }
+	.objective_content { width: 100%; height: auto; margin: 0 auto; float: right; border: solid 3px red;}
+	
+	
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+	#header img { width: 100%; height: 100%;}
+	
+	
+	body {width: auto;}
+	#inner_content {width: 100%; margin: 0 auto;  border: 3px blue solid;  }
+	.teams { width:100%; margin: 0 auto;  margin-top: 50px; padding: 0%; border: 3px solid blue;  }
+	.team_info { padding: 0%;  float: left;  margin-bottom: 5%; margin-left: 22%; alignment-adjust:central;  }
+	
+	
+	.nav ul  { width: 100%;}
+	.inner_nav { width: 80%; border: 3px solid blue;}
+	.nav {width: 100%; border: 3px solid red;}
+	
+	.objective_parent:after{ clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;}
+	.objective_parent img{ border: 3px solid blue;}
+	
+	.objective_parent {width: 100%; border: 3px solid black; }
+	.objective_content { width: 50%; height: auto; margin: 0 auto; float: none; border: solid 3px red;}
+	
+
+	
+	
+	
+	
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	
+	#header img { width: 100%; height: 100%;}
+	#wrapper{ width: 100%;}
+	#inner_content {width: 100%; margin: 0 auto;   border: 3px blue solid;  }
+	
+	.teams {width:auto;  margin-top: 50px; padding: 0%; }
+	
+	.team_info {padding: 0%; float: right; display: inline-block; margin-left: .5%; margin-right: 12%;border: solid 3px red; }
+	
+	.nav {width: 100%; border: 3px solid red;}
+	.nav ul  { width: 100%;}
+	.inner_nav { width: 80%; border: 3px solid blue;}
+	.objective_parent img{ border: 3px solid blue; width: 45%; height: 45%;}
+	.contact { border: 3px solid red; width: auto;}
+	
+	.objective_parent:after{ clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;}
+	.objective_parent img{ border: 3px solid blue;}
+	
+	.objective_parent {width: 100%; border: 3px solid black; }
+	.objective_content { width: 50%; height: auto; margin: 0 auto; float: none; border: solid 3px red;}
+	
+
+	
+	
+
+}
+
+/*#allBtn, #desBtn , #webBtn, #picBtn { margin-left: 3%;}*/
+
+/*#wrapper {
+	border: solid 3px red;
+}*/

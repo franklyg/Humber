@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta  charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manic to Panic - Merchandise</title>	
+
+<style>
+	@import url("css/reset.css");
+	@import url("css/style.css");
+</style>
+<script >
+	
+</script>
+
+</head>
+
+
+
+<body>
+<nav id = "main">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="pic.html">Pictures</a></li>
+			<li><a href="merch.html">Merch</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>	
+		<form>
+			<label>Search:</label>
+			<input type="text" name="search" id="search" />
+			<input type="submit" value="submit" onclick = "return false;">
+		</form>
+		<div id = "black"></div>
+		
+</nav>
+	<!--closes Nav-->
+<div id = "wrapper" >
+	
+	<div id="merch">
+		<h1>Merchandise</h1>
+		
+		<!-- Rollover List-->
+		<ul>
+			<li><img src="images/mtp1.png" id = "bigpic" alt=""/></li>
+			<li><a href="#"
+				onmouseover ="document.bigpic.src = 'images/mtp1.png'; "
+				onmouseout = "document.bigpic.src = 'images/mtp1.png'; ">
+				<img  src="images/mtp1Small.png" alt=""/>
+			</a></li>
+			<li><a href="#"
+				onmouseover ="document.bigpic.src = 'images/mtp2.png'; "
+				onmouseout = "document.bigpic.src = 'images/mtp2.png'; ">
+				<img  src="images/manicSmall.png" alt=""/> 
+			</a></li>
+			<!-- Closes List-->
+			
+
+			<!-- Shirt prices-->
+			<li id="prices">
+				<h1 class ="price">Prices:</h1>
+					<p>STRIPED MTP:</p>
+					<p class="p">25.00</p>
+
+					<p>SOLID MTP:</p>
+					<p class="p">25.00</p>
+					<p id="p">Please email mtp@hotmai.com for further info on merchandise purchase.</p>
+
+			</li>	
+
+		</ul>	
+
+	</div>
+
+	<script type="text/javascript">
+
+
+	</script>
+
+
+
+
+	</div><!-- Closes wrapper -->
+	<!--Foot of page-->
+	<div id = "white"></div>
+	<footer>Francesco Gisonni Copyright 2012&copy;</footer>
+</body>
+</html>
